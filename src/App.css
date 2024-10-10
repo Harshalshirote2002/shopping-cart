@@ -85,6 +85,10 @@ header {
   padding: 10px 20px;
 }
 
+.shop-button:hover{
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
