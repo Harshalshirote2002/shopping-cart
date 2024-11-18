@@ -7,6 +7,7 @@ export function Header() {
     <div className="nav-elements">
       <Link to = "/">Home</Link>
       <Link to = "shop">Shop</Link>
+      <Link to = "cart">Cart</Link>
     </div>
   </header>;
 }

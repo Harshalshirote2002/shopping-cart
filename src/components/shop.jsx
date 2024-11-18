@@ -50,7 +50,7 @@ export function Shop() {
               <div className="general-holder">
                 <p className="loaded-shop-title">{obj.title.slice(0, 45)}...</p>
                 <div className="item-details">
-                  <p>Add to Cart</p>
+                  <p onClick={()=>{console.log(obj)}}>Add to Cart</p>
                   <p className="loaded-shop-price">${obj.price}</p>
                 </div>
               </div>
