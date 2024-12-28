@@ -8,7 +8,7 @@ export function Shop() {
   const [currentCategory, setCurrentCategory] = useState("all");
   const [categories, setCategories] = useState(null);
 
-  const {cart, addCartItem, removeCartItem} = useOutletContext();
+  const {addCartItem} = useOutletContext();
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")

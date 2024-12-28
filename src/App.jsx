@@ -5,12 +5,12 @@ import { Outlet } from "react-router-dom";
 import { useCartHandler } from "./components/cartHandler";
 
 function App() {
-  const [cart, addCartItem, removeCartItem] = useCartHandler();
+  const [cart, addCartItem, updateCart] = useCartHandler();
   
   return (
     <>
       <Header />
-      <Outlet  context = {{cart, addCartItem, removeCartItem}}/>
+      <Outlet  context = {{cart, addCartItem, updateCart}}/>
       <Footer />
     </>
   );

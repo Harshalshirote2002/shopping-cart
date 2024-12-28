@@ -1,0 +1,111 @@
+.loaded-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 100px;
+}
+
+.loaded-cart img{
+    width: calc(min(20vw, 180px));
+    height: auto;
+    max-height: 200px;
+    /* border: none; */
+}
+
+.image-holder{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.general-holder{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e5e7eb;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.general-holder .item-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.item-details .quantity-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-details #qu{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #047857;
+    padding: 10px;
+    /* border-radius: 10px; */
+    color: white;
+    font-weight: 900;
+}
+
+/* .item-details #qu:hover{
+    cursor:initial
+} */
+
+.item-details #modify{
+    padding: 0;
+    margin: 0;
+    background-color: #047857;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+}
+
+/* .item-details #modify:hover{
+    background-color: #e5e7eb;
+    color: #047857;
+    border-radius: 10px;
+} */
+
+.item-details .add{
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item-details .reduce{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.general-holder .loaded-cart-title{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.loaded-cart .card{
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: black 1px 2px 4px;
+    /* transition: all 500ms; */
+}
+
+/* .card:hover{
+    box-shadow: black 1px 2px 5px;
+    cursor: pointer;
+    transform: scale(1.02);
+} */
