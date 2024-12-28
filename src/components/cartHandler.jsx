@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function useCartHandler() {
+export function useCartHandler() {
   const [cart, setCart] = useState([]);
 
   const addCartItem = (item) => {
@@ -13,5 +13,5 @@ export default function useCartHandler() {
     });
   };
 
-  return { cart, addCartItem, removeCartItem };
+  return [cart, addCartItem, removeCartItem ];
 }

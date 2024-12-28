@@ -1,9 +1,7 @@
 import App from "./App";
 import { Home } from "./components/home";
 import { Shop } from "./components/shop";
-import useCartHandler from "./components/cartHandler";
-
-const {cart, addCartItem, removeCartItem} = useCartHandler();
+import { Cart } from "./components/cart";
 
 const routes = [
   {
@@ -12,23 +10,15 @@ const routes = [
     children: [
       {
         index: true,
-        element: (
-          <Home
-            cart={cart}
-            addCartItem={addCartItem}
-            removeCartItem={removeCartItem}
-          />
-        ),
+        element: <Home />,
       },
       {
         path: "shop",
-        element: (
-          <Shop
-            cart={cart}
-            addCartItem={addCartItem}
-            removeCartItem={removeCartItem}
-          />
-        ),
+        element: <Shop />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },
